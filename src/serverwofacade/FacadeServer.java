@@ -10,7 +10,7 @@ package serverwofacade;
  * @author Tinip
  */
 public class FacadeServer {
-    static ScheduleServer scheduleServer = new ScheduleServer();
+    private static ScheduleServer scheduleServer = new ScheduleServer();
     public static void StartServer(){
 	scheduleServer.startBooting();
 	scheduleServer.readSystemConfigFile();
