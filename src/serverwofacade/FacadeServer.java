@@ -18,11 +18,9 @@ public class FacadeServer {
 	scheduleServer.initializeContext();
 	scheduleServer.initializeListeners();
 	scheduleServer.createSystemObjects();
-	System.out.println("Start working......");
     }
     
     public static void StopServer(){
-        System.out.println("After work done.........");
 	scheduleServer.releaseProcesses();
 	scheduleServer.destory();
 	scheduleServer.destroySystemObjects();
